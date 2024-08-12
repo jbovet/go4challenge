@@ -27,6 +27,26 @@ Each task should have the following attributes:
 4. Implement basic error handling and validation.
 5. Ensure that the code is well-documented and readable.
 
+Requirements:
+
+### System Design:
+1. Tasks API: Design a RESTful API that allows users to create, read, update, and delete tasks.
+2. Data Storage: Choose an appropriate data storage solution (in-memory, SQL, NoSQL, etc.) and justify your choice in the design documentation.
+3. Scalability: Design the system to handle increasing load, considering both vertical and horizontal scaling.
+4. Concurrency: The API should be able to handle concurrent requests without data inconsistency or race conditions.
+
+
+### Testing
+1. Unit Tests: Write unit tests for the core business logic.
+2. Integration Tests: Develop integration tests to validate the interaction between the API endpoints and the data storage.
+
+### Bonus Points:
+1. Pagination: Implement pagination for the GET /tasks endpoint.
+2.Load Testing: Include basic load testing to ensure the API can handle concurrent requests.
+3. Error Handling: Provide meaningful error messages and HTTP status codes for all API responses.
+4. Advanced Error Handling: Implement a global error handler middleware to manage API errors.
+5. Dockerization: Provide Docker support to easily spin up the API and its dependencies.
+
 ### Non-Functional Requirements
 
 1. **Performance**: The API should be able to handle a high number of concurrent requests efficiently. Aim for response times of less than 100ms for each API call under normal load.
